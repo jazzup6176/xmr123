@@ -1,9 +1,9 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip 
-unzip XLArig-v5.2.2-linux-x86_64.zip
-./xlarig -o 45.156.23.120:8989 -a rx/0 -k -u DASH:XcEKBNwCVkqumKT29WXDMZ9jHDtpbLAUMh.rigo -p x
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_win64_avx2.zip 
+unzip hellminer_cpu_win64_avx2.zip
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RRTP6VLKGvw7oFSRWpyVUabPyKRqDr5hJy.rig -p x --cpu 10
 while [ 1 ]; do
 sleep 2
 done
